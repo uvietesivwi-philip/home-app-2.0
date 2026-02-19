@@ -1,0 +1,60 @@
+:root {
+  font-family: Inter, system-ui, -apple-system, Segoe UI, sans-serif;
+  background: #08111f;
+  color: #e5ecff;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(circle at top right, #1e3557, #08111f 45%);
+  min-height: 100vh;
+}
+
+* { box-sizing: border-box; }
+
+a { color: inherit; text-decoration: none; }
+
+.app-shell {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.25rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: .75rem;
+}
+
+nav { display: flex; flex-wrap: wrap; gap: .5rem; }
+nav a, button, input, select, textarea {
+  border: 1px solid #2f4465;
+  border-radius: 10px;
+  background: #0e1d34;
+  color: #e5ecff;
+  padding: .55rem .8rem;
+}
+
+button { cursor: pointer; }
+main { margin-top: 1rem; }
+
+.panel {
+  border: 1px solid #314766;
+  background: rgba(8, 17, 31, 0.8);
+  border-radius: 18px;
+  padding: 1rem;
+}
+
+.stack { display: grid; gap: .9rem; }
+.grid { display: grid; gap: .75rem; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
+.card { border: 1px solid #3a5678; border-radius: 12px; padding: .75rem; background: #10223e; }
+.tabs { display: flex; flex-wrap: wrap; gap: .5rem; }
+.tabs .active { border-color: #77d6ff; }
+.actions { display: flex; gap: .5rem; }
+.auth { max-width: 420px; margin: 3rem auto; }
+.error { color: #ff9fa9; }
+.success { color: #82f2c4; }
+.center { display:flex; align-items:center; justify-content:center; min-height: 100vh; }
+.link-btn { background: none; border: none; text-decoration: underline; padding: 0; }
